@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+    .nav-full {
+        display: none;
+    }
+    .nav-short {
+        display: block;
+    }
+}
+@media (min-width: 800px) {
+    .nav-full {
+        display: block;
+    }
+    .nav-short {
+        display: none;
+    }
+}

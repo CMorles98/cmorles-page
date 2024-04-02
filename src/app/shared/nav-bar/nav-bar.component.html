@@ -1,0 +1,47 @@
+<nav class="navbar nav-full bg-dark w-100" style="position: fixed; z-index: 3;">
+  <div class="container">
+    <img src="../../../assets/images/Christopher Morles-logos_white.png" width="300px" alt="logo.png">
+    <div class="spacer"></div>
+    <a class="navbar-brand text-light text-uppercase" href="#home"> Home</a>
+    <a class="navbar-brand text-light text-uppercase" href="#tech-stack"> Tech stack</a>
+    <a class="navbar-brand text-light text-uppercase" href="#about"> About</a>
+    <a role="button" class="navbar-brand text-light text-uppercase btn btn-primary" href="#contact"> CONTACT</a>
+  </div>
+</nav>
+
+<nav class="navbar nav-short bg-dark w-100" style="position: fixed; z-index: 3;">
+  <div class="container">
+    <img src="../../../assets/images/Christopher Morles-logos_white.png" width="300px" alt="logo.png">
+    <div class="spacer"></div>
+
+    <a role="button" (click)="showOffCanvas = !showOffCanvas" role="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="offcanvas-control">
+      <i class="fa-solid fa-bars text-light offcanvas-control"></i>
+    </a>
+  </div>
+</nav>
+
+<div [ngClass]="{'show': showOffCanvas }" class="offcanvas offcanvas-top" #offcanvas tabindex="-1" id="offcanvasTop"
+  aria-labelledby="offcanvasTopLabel" style="height: fit-content !important; background-color: black;">
+  <div class="navbar-container">
+    <div class="row">
+      <div class="col-sm-12" style="margin-bottom: 1px;">
+        <a class="w-100 border border-dark rounded-0 bg-dark navbar-brand text-light text-uppercase btn" role="button"
+          (click)="goAndCloseOffCanvas('#home')"> Home</a>
+      </div>
+      <div class="col-sm-12" style="margin-bottom: 1px;">
+        <a class="w-100 border border-dark rounded-0 bg-dark navbar-brand text-light text-uppercase btn" role="button"
+          (click)="goAndCloseOffCanvas('#tech-stack')"> Tech
+          stack</a>
+      </div>
+      <div class="col-sm-12" style="margin-bottom: 1px;">
+        <a class="w-100 border border-dark rounded-0 bg-dark navbar-brand text-light text-uppercase btn" role="button"
+          (click)="goAndCloseOffCanvas('#about')"> About</a>
+      </div>
+      <div class="col-sm-12" style="margin-bottom: 1px;">
+        <a class="w-100 border border-dark rounded-0 bg-primary navbar-brand text-light text-uppercase btn"
+          role="button" (click)="goAndCloseOffCanvas('#contact')"> CONTACT</a>
+      </div>
+    </div>
+  </div>
+</div>

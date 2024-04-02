@@ -1,0 +1,16 @@
+// Variable overrides first
+// $primary: #FFD600;
+$primary: #87C4FF;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+$navbar-toggler-font-size: 1rem * .875;
+$navbar-brand-font-size: 1rem * .875;
+$nav-link-font-size: 1rem * .875;
+$btn-font-size: 1rem * .875;
+$btn-font-weight: bold;
+
+$btn-color: #FFFFFF;
+
+// Then import Bootstrap
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

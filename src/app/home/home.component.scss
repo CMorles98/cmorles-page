@@ -1,0 +1,37 @@
+.background-image {
+    background-image: url(../../assets/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg-gradient {
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(135,196,255,1) 0%, rgba(53,89,224,1) 100%) !important;
+}
+
+.card {
+    height: 26rem !important;
+}
+.text-container {
+    overflow-y: auto !important;
+}
+.list-item {
+    list-style: none;
+    cursor: pointer;
+}
+.small-text{
+    font-size: smaller !important;
+}
+.parallax {
+    background-image: url("../../assets/images/parallax.jpg");
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .big-padding {
+    padding-top: 150px !important;
+  }
+  .big-padding-bottom {
+    padding-bottom: 150px !important;
+  }
