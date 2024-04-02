@@ -1,16 +1,23 @@
 <nav class="navbar nav-full bg-dark w-100" style="position: fixed; z-index: 3;">
   <div class="container">
-    <img src="../../../assets/images/Christopher Morles-logos_white.png" width="300px" alt="logo.png">
-    <div class="spacer"></div>
-    <a class="navbar-brand text-light text-uppercase d-none d-lg-block d-xl-block d-xxl-block" href="#home"> Home</a>
-    <a class="navbar-brand text-light text-uppercase d-none d-lg-block d-xl-block d-xxl-block" href="#tech-stack"> Tech stack</a>
-    <a class="navbar-brand text-light text-uppercase d-none d-lg-block d-xl-block d-xxl-block" href="#about"> About</a>
-    <a class="navbar-brand text-light text-uppercase d-none d-lg-block d-xl-block d-xxl-block" href="#contact"> Social media</a>
-    <a role="button" class="navbar-brand text-light text-uppercase btn btn-primary d-none d-lg-block d-xl-block d-xxl-block" href="mailto:christopher.mh98@gmail.com"> CONTACT</a>
-    <a role="button" (click)="showOffCanvas = !showOffCanvas" role="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="offcanvas-control d-block d-lg-none d-xl-none d-xxl-none">
-      <i class="fa-solid fa-bars text-light offcanvas-control"></i>
-    </a>
+    <div class="row w-100">
+      <div class="col-6 col-sm-3 align-content-center">
+        <img class="d-block d-md-none d-lg-block " src="../../../assets/images/Christopher Morles-logos_white.png" width="250px" alt="logo.png">
+        <img class="d-none d-md-block d-lg-none align-content-center" src="../../../assets/images/CM-logos_white.png" width="60px" alt="logo.png">
+      </div>
+      <div class="col-6 col-sm-9 justify-content-end d-inline-flex">
+
+        <a class="navbar-brand text-light text-uppercase d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="#home"> Home</a>
+        <a class="navbar-brand text-light text-uppercase d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="#tech-stack"> Tech stack</a>
+        <a class="navbar-brand text-light text-uppercase d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="#about"> About</a>
+        <a class="navbar-brand text-light text-uppercase d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="#contact"> Social media</a>
+        <a role="button" class="navbar-brand text-light text-uppercase btn btn-primary d-none d-md-block d-lg-block d-xl-block d-xxl-block" href="mailto:christopher.mh98@gmail.com"> CONTACT</a>
+        <a role="button" (click)="showOffCanvas = !showOffCanvas" role="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="offcanvas-control d-block d-md-none d-lg-none d-xl-none d-xxl-none align-content-center">
+        <i class="fa-solid fa-bars text-light offcanvas-control"></i>
+        </a>
+    </div>
+  </div>
   </div>
 </nav>
 
